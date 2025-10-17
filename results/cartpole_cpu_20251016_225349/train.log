@@ -1,0 +1,35 @@
+nohup: ignoring input
+[device] CUDA build 12.8 | NVIDIA RTX A6000 | capability (8, 6)
+Using device: cuda
+[init] |theta|_1=905.0873
+[ep     1] ret=  21.0  MA100=  21.0  loss=-0.0012  |theta|_1=905.2
+[ep   100] ret=  38.0  MA100=  40.5  loss=0.0524  |theta|_1=930.7
+[ep   200] ret= 108.0  MA100= 153.5  loss=-0.0166  |theta|_1=963.2
+[ep   300] ret= 374.0  MA100= 319.2  loss=-0.0359  |theta|_1=982.3
+[ep   400] ret= 141.0  MA100= 426.9  loss=0.0012  |theta|_1=994.2
+[ep   500] ret= 500.0  MA100= 322.5  loss=0.0072  |theta|_1=1009.7
+[ep   600] ret= 500.0  MA100= 486.6  loss=-0.0155  |theta|_1=1017.4
+[ep   700] ret= 500.0  MA100= 496.1  loss=-0.0273  |theta|_1=1024.8
+[ep   800] ret= 500.0  MA100= 499.6  loss=-0.0214  |theta|_1=1026.0
+[ep   900] ret= 500.0  MA100= 438.1  loss=-0.0034  |theta|_1=1035.6
+[ep  1000] ret= 129.0  MA100= 456.3  loss=-0.0444  |theta|_1=1042.9
+[ep  1100] ret= 168.0  MA100= 201.8  loss=0.0103  |theta|_1=1072.6
+[ep  1200] ret= 500.0  MA100= 457.7  loss=0.0065  |theta|_1=1074.7
+[ep  1300] ret= 366.0  MA100= 369.6  loss=0.0034  |theta|_1=1079.1
+[ep  1400] ret= 500.0  MA100= 495.3  loss=-0.0020  |theta|_1=1081.9
+[ep  1500] ret= 500.0  MA100= 480.9  loss=-0.0558  |theta|_1=1084.0
+[ep  1600] ret= 500.0  MA100= 500.0  loss=-0.0320  |theta|_1=1090.4
+[ep  1700] ret= 500.0  MA100= 500.0  loss=0.0326  |theta|_1=1090.3
+[ep  1800] ret= 500.0  MA100= 498.2  loss=-0.0327  |theta|_1=1096.8
+[ep  1900] ret= 500.0  MA100= 500.0  loss=-0.0334  |theta|_1=1100.0
+[ep  2000] ret= 500.0  MA100= 500.0  loss=0.0024  |theta|_1=1101.2
+[ep  2100] ret= 500.0  MA100= 500.0  loss=-0.0096  |theta|_1=1107.3
+[ep  2200] ret= 500.0  MA100= 490.0  loss=-0.0078  |theta|_1=1109.4
+[ep  2300] ret= 500.0  MA100= 498.6  loss=-0.0072  |theta|_1=1115.3
+[ep  2400] ret= 383.0  MA100= 498.7  loss=0.0219  |theta|_1=1119.6
+[ep  2500] ret= 169.0  MA100= 326.5  loss=-0.0404  |theta|_1=1130.0
+[ep  2600] ret= 500.0  MA100= 178.3  loss=0.0233  |theta|_1=1134.6
+[ep  2700] ret= 500.0  MA100= 500.0  loss=0.0140  |theta|_1=1131.6
+[ep  2800] ret= 500.0  MA100= 500.0  loss=0.0299  |theta|_1=1127.8
+[ep  2900] ret= 500.0  MA100= 500.0  loss=-0.0280  |theta|_1=1132.2
+[ep  3000] ret= 500.0  MA100= 500.0  loss=0.0009  |theta|_1=1132.8
