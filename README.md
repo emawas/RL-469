@@ -21,11 +21,10 @@ RL-469/
     │   │   ├── train_pong_pg.py                  # Vanilla REINFORCE for Pong
     │   │   ├── train_pong_pg_baseline.py         # REINFORCE + Value Baseline for Pong
     │   │   ├── rollout_pong_pg.py                # Evaluate Pong policy
-    │   │   └── policy_cnn.py                     # CNN-based policy for Atari frames
+    │   │   └── policy_cnn.py                     # CNN-based policy for Atari frame
+    │   │   └── preprocess.py                     # Frame preprocessing and helpers
+    │   │   └── value_cnn.py                      # Value network (critic) CNN
     │   │
-    │   └── utils/
-    │       └── preprocess.py                     # Frame preprocessing and helpers
-    │
     ├── results/                                  # Training logs, models, and plots
     │   ├── cartpole_pg_YYYYMMDD_HHMMSS/
     │   ├── cartpole_pg_baseline_YYYYMMDD_HHMMSS/
@@ -104,7 +103,7 @@ class ValueNet(nn.Module):
 
 **Actor (policy) loss — REINFORCE with baseline**
 
-$$\mathcal{L}_{\text{actor}}=-\,\frac{1}{T} \sum_{t=0}^{T-1}\log \pi_\theta(a_t \mid s_t)\; \underbrace{\big(G_t - V_\phi(s_t)\big)}_{A_t\ \text{(advantage)}}.$$
+$$\mathcal{L}_{\text{actor}}=-\,\frac{1}{T} \sum_{t=0}^{T-1}\log \pi_\theta(a_t \mid s_t)\ \underbrace{\big(G_t - V_\phi(s_t)\big)}_{A_t\ \text{(advantage)}}.$$
 
 **Critic (value) loss — fit returns with MSE**
 
@@ -120,8 +119,7 @@ The critic outpute V and we compute the advantage:
 V = valuef(S)
 advantages = G - V
 ```
-The actor loss implements REINFORCE with a baseline:
-$$\mathcal{L}{\text{actor}} = -\frac{1}{T} \sum{t=0}^{T-1} \log \pi_\theta(a_t \mid s_t); (G_t - V_\phi(s_t)).$$
+
 ### Training with a baseline:
 To train Cartpole with a baseline we run the following commands:
 
@@ -216,6 +214,11 @@ results/
 The plot should look like this:
 <img width="980" height="980" alt="image" src="https://github.com/user-attachments/assets/5348025e-57c4-4e45-85d8-2a4d217e89f9" />
 We see that without a baseline, the model suffers from high variance in the returns, and training is incredibly slow.
+### Note about the learning rate
+
+During experimentation, I initially used a learning rate of 0.0001, which was the first value that produced stable and monotonic training for both environments without divergence. Higher learning rates (e.g., 0.001 or above) often caused gradient instability or flatlining early in training, particularly in the high-variance Pong environment.
+
+Although 0.0001 led to slower convergence — with the policy improving steadily but plateauing after a few thousand episodes — it consistently avoided oscillations or crashes. Results were promising up to that plateau, but due to the time constraints of the HW assignment, there wasn’t sufficient time to perform additional sweeps with higher learning rates or more advanced variance-reduction methods (e.g., adaptive baselines or entropy regularization).
 
 ## Pong (with a baseline)
 Now using the same baseline method that we used with cartpole, we can train a model with the following commands:
@@ -282,3 +285,43 @@ results/
     │   ├── histogram.png       # histogram of returns
     │   └── rollout_summary.txt # mean, std, and summary stats
 ```
+### PONG Rollouts with a baseline:
+We can now test the model with a baseline over 500 episodes to compare to the model without a baseline and we run witht hte following command 
+
+```
+# Path to your trained (with-baseline) run
+export RUN_PONG_BASE="results/pong_pg_baseline_gpu_20251018_235646"
+export CKPT="$RUN_PONG_BASE/checkpoints/ckpt_ep7000.pt"  # use the latest checkpoint
+export OUT="$RUN_PONG_BASE/rollouts_500"
+mkdir -p "$OUT"
+
+# Run evaluation on GPU 1
+CUDA_VISIBLE_DEVICES=1 python -u -m src.pong.rollout_pong_pg_baseline \
+  --checkpoint "$CKPT" \
+  --episodes 500 \
+  --seed 123 \
+  --device cuda \
+  --results_dir "$OUT"
+```
+And the output directory structur will look like this:
+```text
+results/
+└── pong_pg_baseline_gpu_20251018_235646/
+    ├── rollouts_500/
+    │   ├── returns.npy
+    │   ├── histogram.png
+    │   └── rollout_summary.txt
+```
+And we end with the following results:
+
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/ee6d7468-4f1c-4267-936c-d981ed2f9ba9" />
+
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/e5e66c2a-0d05-439b-a7ed-51aa08c5d46a" />
+
+### Effect of the Baseline
+
+The introduction of a value function baseline significantly improved performance stability and learning efficiency in Pong.
+As shown below, the baseline version achieved a mean episode return of −0.78 with a standard deviation of 5.57, compared to the no-baseline version, which averaged −9.30 with a similar variance (Std = 4.49).
+
+This demonstrates that adding a learned critic reduces gradient variance and stabilizes updates — allowing the agent to reach near-zero performance (roughly break-even play) within 7,000 episodes, while the vanilla REINFORCE model plateaued around −10.
+In essence, the baseline allows the agent to focus on meaningful improvements rather than being overwhelmed by high-variance return estimates.
