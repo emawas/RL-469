@@ -1,0 +1,35 @@
+nohup: ignoring input
+Using device: cuda
+[init] |theta_pi|_1=905.09  |theta_v|_1=892.32
+[ep     1] ret=  26.0 MA100=  26.0 loss_pi=0.0090 loss_v=0.4808 |theta_pi|_1=905.0 |theta_v|_1=892.3
+[ep    50] ret=  32.0 MA100=  32.0 loss_pi=-0.0011 loss_v=0.4844 |theta_pi|_1=908.5 |theta_v|_1=893.6
+[ep   100] ret=  34.0 MA100=  30.7 loss_pi=-0.0197 loss_v=0.4853 |theta_pi|_1=918.0 |theta_v|_1=896.3
+[ep   150] ret= 180.0 MA100=  48.9 loss_pi=-0.0187 loss_v=0.4972 |theta_pi|_1=930.3 |theta_v|_1=895.5
+[ep   200] ret= 122.0 MA100=  89.1 loss_pi=-0.0268 loss_v=0.4959 |theta_pi|_1=952.5 |theta_v|_1=897.4
+[ep   250] ret= 188.0 MA100= 148.4 loss_pi=0.0010 loss_v=0.4973 |theta_pi|_1=967.7 |theta_v|_1=902.1
+[ep   300] ret= 208.0 MA100= 172.3 loss_pi=-0.0223 loss_v=0.4976 |theta_pi|_1=975.5 |theta_v|_1=909.6
+[ep   350] ret= 341.0 MA100= 222.7 loss_pi=0.0001 loss_v=0.4985 |theta_pi|_1=978.8 |theta_v|_1=920.6
+[ep   400] ret= 500.0 MA100= 353.9 loss_pi=-0.0036 loss_v=0.4990 |theta_pi|_1=980.1 |theta_v|_1=968.3
+[ep   450] ret= 500.0 MA100= 447.9 loss_pi=0.0186 loss_v=0.4990 |theta_pi|_1=983.0 |theta_v|_1=954.8
+[ep   500] ret= 123.0 MA100= 329.1 loss_pi=0.0482 loss_v=0.4959 |theta_pi|_1=991.7 |theta_v|_1=952.6
+[ep   550] ret= 110.0 MA100= 154.8 loss_pi=0.0674 loss_v=0.4955 |theta_pi|_1=1002.0 |theta_v|_1=946.5
+[ep   600] ret= 279.0 MA100= 121.5 loss_pi=0.0428 loss_v=0.4982 |theta_pi|_1=1011.9 |theta_v|_1=948.5
+[ep   650] ret= 326.0 MA100= 244.0 loss_pi=0.0112 loss_v=0.4985 |theta_pi|_1=1014.3 |theta_v|_1=955.8
+[ep   700] ret= 391.0 MA100= 301.8 loss_pi=0.0166 loss_v=0.4987 |theta_pi|_1=1011.8 |theta_v|_1=956.4
+[ep   750] ret= 387.0 MA100= 344.1 loss_pi=-0.0016 loss_v=0.4987 |theta_pi|_1=1012.1 |theta_v|_1=958.2
+[ep   800] ret= 500.0 MA100= 439.6 loss_pi=-0.0353 loss_v=0.4990 |theta_pi|_1=1011.2 |theta_v|_1=953.3
+[ep   850] ret= 500.0 MA100= 441.6 loss_pi=0.0032 loss_v=0.4990 |theta_pi|_1=1010.1 |theta_v|_1=955.6
+[ep   900] ret= 500.0 MA100= 450.1 loss_pi=0.0079 loss_v=0.4990 |theta_pi|_1=1012.9 |theta_v|_1=950.8
+[ep   950] ret= 500.0 MA100= 458.2 loss_pi=0.0215 loss_v=0.4990 |theta_pi|_1=1016.3 |theta_v|_1=955.2
+[ep  1000] ret= 467.0 MA100= 461.8 loss_pi=-0.0087 loss_v=0.4989 |theta_pi|_1=1021.3 |theta_v|_1=953.0
+[ep  1050] ret= 500.0 MA100= 473.3 loss_pi=0.0039 loss_v=0.4990 |theta_pi|_1=1021.2 |theta_v|_1=952.3
+[ep  1100] ret= 500.0 MA100= 490.0 loss_pi=0.0291 loss_v=0.4990 |theta_pi|_1=1022.5 |theta_v|_1=955.8
+[ep  1150] ret= 193.0 MA100= 430.7 loss_pi=-0.0016 loss_v=0.4974 |theta_pi|_1=1027.9 |theta_v|_1=951.2
+[ep  1200] ret= 311.0 MA100= 298.2 loss_pi=-0.0020 loss_v=0.4984 |theta_pi|_1=1031.1 |theta_v|_1=948.4
+[ep  1250] ret= 352.0 MA100= 263.1 loss_pi=-0.0153 loss_v=0.4986 |theta_pi|_1=1036.9 |theta_v|_1=948.4
+[ep  1300] ret= 500.0 MA100= 393.9 loss_pi=-0.0030 loss_v=0.4990 |theta_pi|_1=1037.3 |theta_v|_1=949.5
+[ep  1350] ret= 500.0 MA100= 493.9 loss_pi=-0.0012 loss_v=0.4990 |theta_pi|_1=1038.1 |theta_v|_1=955.0
+[ep  1400] ret= 500.0 MA100= 500.0 loss_pi=-0.0130 loss_v=0.4990 |theta_pi|_1=1037.7 |theta_v|_1=952.4
+[ep  1450] ret= 500.0 MA100= 498.5 loss_pi=-0.0043 loss_v=0.4990 |theta_pi|_1=1038.2 |theta_v|_1=949.6
+[ep  1500] ret= 500.0 MA100= 498.5 loss_pi=-0.0031 loss_v=0.4990 |theta_pi|_1=1037.8 |theta_v|_1=954.3
+Saved to results/cartpole_baseline_gpu_20251018_214610
