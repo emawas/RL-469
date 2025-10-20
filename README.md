@@ -66,7 +66,7 @@ CUDA_VISIBLE_DEVICES=0 python -u -m src.cartpole.train_cartpole_pg \
   --results_dir results/cartpole_pg_$(date +%Y%m%d_%H%M%S) \
   > train.log 2>&1 &
 ```
-results/cartpole_pg_<timestamp>/
+The results can be found in: results/cartpole_pg_<timestamp>/
 <img width="960" height="720" alt="image" src="https://github.com/user-attachments/assets/42a97b8f-c36e-4d37-8a60-553ebc58d564" />
 
 We see that without a baseline, the returns are very noisy. Hence, we use a baseline to reduce the variance.
