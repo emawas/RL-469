@@ -1,0 +1,22 @@
+# OS/IDE
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+
+# Logs, figs, data
+nohup.out
+*.log
+*.csv
+*.png
+*.gif
+*.mp4
+
+# Models / checkpoints / results
+**/results/
+**/checkpoints/
+*.pt
+*.pth
+*.ckpt
