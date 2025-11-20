@@ -1,13 +1,48 @@
 # RL-469
-# HW 3 Instructions on how to run the code:
+## HW 3 Instructions on how to run the code:
 
-# Clone RL-469 repo 
+### Clone RL-469 repo 
 
 ```
 git clone https://github.com/emawas/RL-469.git
+```
+To run the sequential FedAvg problem in question 1. 
 
+```
 cd RL-469/HW-3
 ```
+
+Then go to the bottom under 
+```
+if __name__ == "__main__":
+```
+you will find a config array that allows you to modify C and E 
+
+```
+configs = [
+        (0.10, 10)
+    ]
+```
+
+Then in th terminal you run:
+
+```
+nohup python -u src/train_fedav.py > results/fedavg_C0.1_E10.log 2>&1 &
+tail -f results/fedavg_C0.1_E10.log 
+```
+The results of the test run will show after the training is done and the results can be found in 
+
+```
+HW-3/results/C0.1_E10/live_plot.png
+```
+
+And the run on the test data will show as a png file named 
+
+```
+best_C0.1_E10.png
+```
+
+
 
 # HW 1 REPORT
 In this project, we train agents to solve control tasks using **policy gradient methods**:
