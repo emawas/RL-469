@@ -1,4 +1,14 @@
 # RL-469
+# HW 3 Instructions on how to run the code:
+
+# Clone RL-469 repo 
+
+```
+git clone https://github.com/emawas/RL-469.git
+
+cd RL-469/HW-3
+```
+
 # HW 1 REPORT
 In this project, we train agents to solve control tasks using **policy gradient methods**:
 
