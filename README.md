@@ -1,6 +1,8 @@
 # RL-469
 ## HW 3 Instructions on how to run the code:
 
+## Part 1
+
 ### Clone RL-469 repo 
 
 ```
@@ -42,6 +44,53 @@ And the run on the test data will show as a png file named
 best_C0.1_E10.png
 ```
 
+## Parallel FedAvg with Ray
+
+Now to run the parallel fedav script with ray we run the following:
+
+```
+cd HW-3
+```
+Near the bottom of src/train_fedav_ray.py, under:
+
+```
+if __name__ == "__main__":
+```
+
+You will find the configuration llist that controls the fraction of participating clients C and the number of local epochs E:
+
+```
+configs = [
+    (0.10, 10)
+]
+```
+
+The best parameters and hyperparameters are already chosen. Then in the terminal run:
+
+```
+nohup python -u src/train_fedav_ray.py > results/fedavg_ray_C0.1_E10.log 2>&1 &
+tail -f results/fedavg_ray_C0.1_E10.log 
+```
+
+You will find the results in:
+
+```
+HW-3/results/ray_C0.1_E10.png
+```
+
+## Laplace noise Part 3
+
+Run the following 
+
+```
+nohup python -u src/dp_fedav.py > results/dp_fedav.log 2>&1 &
+tail -f results/dp_fedav.log
+```
+That will run the model with different values of b and the corresponding accuracy vs. b plot can be found in 
+
+```
+HW-3\results\dp_accuracy_vs_b.png
+```
 
 
 # HW 1 REPORT
