@@ -41,7 +41,7 @@ HW-3/results/C0.1_E10/live_plot.png
 And the run on the test data will show as a png file named 
 
 ```
-best_C0.1_E10.png
+HW-3\results\best_C0.1_E10.png
 ```
 
 ## Parallel FedAvg with Ray
