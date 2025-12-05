@@ -1,0 +1,74 @@
+nohup: ignoring input
+GPU in use: NVIDIA GeForce RTX 2080 Ti
+Constructing *_X.npy and *_y.npy from train_data.npy / test_data.npy ...
+train_data type: <class 'numpy.ndarray'> shape: (100,)
+test_data  type: <class 'numpy.ndarray'> shape: (1,)
+Raw train_X shape: (31825, 28, 28)
+Raw train_y shape: (31825,)
+Raw test_X  shape: (3621, 28, 28)
+Raw test_y  shape: (3621,)
+After digit filter:
+  train_X shape: (9517, 28, 28)
+  train_y shape: (9517,)
+  test_X  shape: (1049, 28, 28)
+  test_y  shape: (1049,)
+  unique train labels: [0 1 2 3 4 5 6 7 8 9]
+  unique test  labels: [0 1 2 3 4 5 6 7 8 9]
+Saved a few debug images to results/debug_sample_*.png
+Saved:
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/train_X.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/train_y.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/test_X.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/test_y.npy
+
+=== Overfit tiny subset with LeNet5 ===
+Epoch 01: tiny-set F1=0.0184
+Epoch 02: tiny-set F1=0.0184
+Epoch 03: tiny-set F1=0.0184
+Epoch 04: tiny-set F1=0.0216
+Epoch 05: tiny-set F1=0.0216
+Epoch 06: tiny-set F1=0.0216
+Epoch 07: tiny-set F1=0.0216
+Epoch 08: tiny-set F1=0.0216
+Epoch 09: tiny-set F1=0.0216
+Epoch 10: tiny-set F1=0.0216
+Epoch 11: tiny-set F1=0.0216
+Epoch 12: tiny-set F1=0.0216
+Epoch 13: tiny-set F1=0.0216
+Epoch 14: tiny-set F1=0.0216
+Epoch 15: tiny-set F1=0.0216
+Epoch 16: tiny-set F1=0.0216
+Epoch 17: tiny-set F1=0.0216
+Epoch 18: tiny-set F1=0.0216
+Epoch 19: tiny-set F1=0.0216
+Epoch 20: tiny-set F1=0.0216
+Epoch 21: tiny-set F1=0.0216
+Epoch 22: tiny-set F1=0.0216
+Epoch 23: tiny-set F1=0.0216
+Epoch 24: tiny-set F1=0.0216
+Epoch 25: tiny-set F1=0.0216
+Epoch 26: tiny-set F1=0.0216
+Epoch 27: tiny-set F1=0.0216
+Epoch 28: tiny-set F1=0.0216
+Epoch 29: tiny-set F1=0.0216
+Epoch 30: tiny-set F1=0.0216
+Epoch 31: tiny-set F1=0.0216
+Epoch 32: tiny-set F1=0.0216
+Epoch 33: tiny-set F1=0.0216
+Epoch 34: tiny-set F1=0.0216
+Epoch 35: tiny-set F1=0.0216
+Epoch 36: tiny-set F1=0.0216
+Epoch 37: tiny-set F1=0.0216
+Epoch 38: tiny-set F1=0.0216
+Epoch 39: tiny-set F1=0.0216
+Epoch 40: tiny-set F1=0.0216
+Epoch 41: tiny-set F1=0.0216
+Epoch 42: tiny-set F1=0.0216
+Epoch 43: tiny-set F1=0.0216
+Epoch 44: tiny-set F1=0.0216
+Epoch 45: tiny-set F1=0.0216
+Epoch 46: tiny-set F1=0.0216
+Epoch 47: tiny-set F1=0.0216
+Epoch 48: tiny-set F1=0.0216
+Epoch 49: tiny-set F1=0.0216
+Epoch 50: tiny-set F1=0.0216

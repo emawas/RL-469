@@ -1,0 +1,83 @@
+nohup: ignoring input
+/nfs/home/emg6364/RL-469/HW-4/src/bayesopt.py:63: SyntaxWarning: invalid escape sequence '\i'
+  batch_idx_cont \in [0, len(BATCH_SIZES)-1]
+GPU in use: NVIDIA RTX A6000
+Found existing *_X.npy and *_y.npy files, using them.
+Max pixel value in loaded data: 1.0
+Images already in [0,1]; skipping additional scaling.
+|   iter    |  target   | batch_... | act_id... |
+-------------------------------------------------
+[BO] Evaluating batch_size=256, activation=sigmoid (batch_idx=4, act_idx=1)
+[BO] -> val F1 = 0.6489
+| [39m1        [39m | [39m0.6488840[39m | [39m4.1788151[39m | [39m0.5722786[39m |
+[BO] Evaluating batch_size=32, activation=sigmoid (batch_idx=1, act_idx=1)
+[BO] -> val F1 = 0.8491
+| [35m2        [39m | [35m0.8491037[39m | [35m1.3611087[39m | [35m1.1026295[39m |
+[BO] Evaluating batch_size=256, activation=sigmoid (batch_idx=4, act_idx=1)
+[BO] -> val F1 = 0.6775
+| [39m3        [39m | [39m0.6775141[39m | [39m4.3168138[39m | [39m0.8462129[39m |
+[BO] Evaluating batch_size=1024, activation=sigmoid (batch_idx=6, act_idx=1)
+[BO] -> val F1 = 0.1429
+| [39m4        [39m | [39m0.1428792[39m | [39m5.8845851[39m | [39m1.3696594[39m |
+[BO] Evaluating batch_size=128, activation=sigmoid (batch_idx=3, act_idx=1)
+[BO] -> val F1 = 0.8096
+| [39m5        [39m | [39m0.8095962[39m | [39m2.8855914[39m | [39m0.7842350[39m |
+[BO] Evaluating batch_size=64, activation=tanh (batch_idx=2, act_idx=2)
+[BO] -> val F1 = 0.8396
+| [39m6        [39m | [39m0.8396066[39m | [39m2.4615473[39m | [39m2.0      [39m |
+[BO] Evaluating batch_size=16, activation=tanh (batch_idx=0, act_idx=2)
+[BO] -> val F1 = 0.0216
+| [39m7        [39m | [39m0.0216393[39m | [39m0.0      [39m | [39m2.0      [39m |
+[BO] Evaluating batch_size=64, activation=relu (batch_idx=2, act_idx=0)
+[BO] -> val F1 = 0.8137
+| [39m8        [39m | [39m0.8136952[39m | [39m1.6631739[39m | [39m0.0      [39m |
+[BO] Evaluating batch_size=256, activation=tanh (batch_idx=4, act_idx=2)
+[BO] -> val F1 = 0.8565
+| [35m9        [39m | [35m0.8564793[39m | [35m3.6750002[39m | [35m2.0      [39m |
+[BO] Evaluating batch_size=16, activation=relu (batch_idx=0, act_idx=0)
+[BO] -> val F1 = 0.0185
+| [39m10       [39m | [39m0.0184938[39m | [39m0.1228998[39m | [39m0.0      [39m |
+[BO] Evaluating batch_size=64, activation=sigmoid (batch_idx=2, act_idx=1)
+[BO] -> val F1 = 0.8367
+| [39m11       [39m | [39m0.8366522[39m | [39m2.0453120[39m | [39m0.9480573[39m |
+[BO] Evaluating batch_size=128, activation=relu (batch_idx=3, act_idx=0)
+[BO] -> val F1 = 0.7978
+| [39m12       [39m | [39m0.7977655[39m | [39m2.6843466[39m | [39m0.0      [39m |
+[BO] Evaluating batch_size=64, activation=tanh (batch_idx=2, act_idx=2)
+[BO] -> val F1 = 0.8081
+| [39m13       [39m | [39m0.8080550[39m | [39m1.5999779[39m | [39m2.0      [39m |
+[BO] Evaluating batch_size=128, activation=sigmoid (batch_idx=3, act_idx=1)
+[BO] -> val F1 = 0.7926
+| [39m14       [39m | [39m0.7925863[39m | [39m3.4067289[39m | [39m1.4287421[39m |
+[BO] Evaluating batch_size=256, activation=tanh (batch_idx=4, act_idx=2)
+[BO] -> val F1 = 0.8645
+| [35m15       [39m | [35m0.8645026[39m | [35m4.4639765[39m | [35m2.0      [39m |
+[BO] Evaluating batch_size=64, activation=tanh (batch_idx=2, act_idx=2)
+[BO] -> val F1 = 0.8735
+| [35m16       [39m | [35m0.8735169[39m | [35m1.8798585[39m | [35m1.5286918[39m |
+[BO] Evaluating batch_size=256, activation=tanh (batch_idx=4, act_idx=2)
+[BO] -> val F1 = 0.8540
+| [39m17       [39m | [39m0.8539878[39m | [39m4.1035904[39m | [39m1.7305747[39m |
+[BO] Evaluating batch_size=64, activation=relu (batch_idx=2, act_idx=0)
+[BO] -> val F1 = 0.8653
+| [39m18       [39m | [39m0.8652842[39m | [39m2.1022320[39m | [39m0.2738596[39m |
+[BO] Evaluating batch_size=64, activation=sigmoid (batch_idx=2, act_idx=1)
+[BO] -> val F1 = 0.8550
+| [39m19       [39m | [39m0.8549845[39m | [39m1.6170134[39m | [39m0.5918688[39m |
+[BO] Evaluating batch_size=256, activation=tanh (batch_idx=4, act_idx=2)
+[BO] -> val F1 = 0.8420
+| [39m20       [39m | [39m0.8419620[39m | [39m4.1141937[39m | [39m2.0      [39m |
+=================================================
+
+=== Bayesian Optimization Finished ===
+Raw optimizer.max:
+{'target': np.float64(0.8735169038548525), 'params': {'batch_idx_cont': np.float64(1.8798585596407666), 'act_idx_cont': np.float64(1.528691866947722)}}
+
+Best hyperparameters from Bayesian Optimization:
+  batch_size index: 2 -> 64
+  activation index: 2   -> tanh
+Saved BO training F1 plot to: /nfs/home/emg6364/RL-469/HW-4/results/train_f1_best_bo.png
+
+=== Final Evaluation on Test Set (Bayesian Optimization) ===
+Best hyperparameters from BO: batch_size=64, activation=tanh
+Test macro F1: 0.9087

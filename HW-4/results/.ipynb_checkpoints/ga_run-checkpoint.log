@@ -1,0 +1,19 @@
+nohup: ignoring input
+GPU in use: NVIDIA RTX A6000
+Constructing *_X.npy and *_y.npy from train_data.npy / test_data.npy ...
+Unique train labels after filtering: [0 1 2 3 4 5 6 7 8 9]
+Unique test labels after filtering: [0 1 2 3 4 5 6 7 8 9]
+Saved:
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/train_X.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/train_y.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/test_X.npy
+  /nfs/home/emg6364/RL-469/HW-4/Assignment3-data/test_y.npy
+
+=== Generation 0 ===
+  Individual (B=16, act=sigmoid) -> fitness=0.0194
+  Individual (B=16, act=sigmoid) -> fitness=0.0185
+  Individual (B=64, act=relu) -> fitness=0.0216
+  Individual (B=1024, act=relu) -> fitness=0.0194
+  Individual (B=128, act=tanh) -> fitness=0.0216
+  Individual (B=256, act=sigmoid) -> fitness=0.0190
+  Individual (B=64, act=relu) -> fitness=0.0216

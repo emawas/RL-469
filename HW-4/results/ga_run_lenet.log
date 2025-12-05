@@ -1,0 +1,186 @@
+nohup: ignoring input
+GPU in use: NVIDIA RTX A6000
+Found existing *_X.npy and *_y.npy files, using them.
+Max pixel value in loaded data: 1.0
+Images already in [0,1]; skipping additional scaling.
+
+=== Generation 0 ===
+  Individual (B=16, act=sigmoid) -> fitness=0.8410
+  Individual (B=16, act=sigmoid) -> fitness=0.8456
+  Individual (B=64, act=relu) -> fitness=0.8063
+  Individual (B=1024, act=relu) -> fitness=0.6178
+  Individual (B=128, act=tanh) -> fitness=0.8783
+  Individual (B=256, act=sigmoid) -> fitness=0.6714
+  Individual (B=64, act=relu) -> fitness=0.8628
+  Individual (B=32, act=relu) -> fitness=0.6967
+  Individual (B=64, act=tanh) -> fitness=0.8258
+  Individual (B=64, act=tanh) -> fitness=0.8891
+  Individual (B=32, act=relu) -> fitness=0.8387
+  Individual (B=16, act=sigmoid) -> fitness=0.8801
+  Avg fitness: 0.8045, Best fitness: 0.8891
+  Best so far: B=64, act=tanh, F1=0.8891
+  Offspring (B=512, act=relu) -> fitness=0.8094
+  Offspring (B=32, act=relu) -> fitness=0.7212
+  Offspring (B=16, act=relu) -> fitness=0.0216
+  Offspring (B=32, act=sigmoid) -> fitness=0.8340
+  Offspring (B=128, act=tanh) -> fitness=0.8411
+  Offspring (B=64, act=tanh) -> fitness=0.8833
+  Offspring (B=128, act=tanh) -> fitness=0.8390
+  Offspring (B=64, act=tanh) -> fitness=0.8556
+  Offspring (B=1024, act=tanh) -> fitness=0.7560
+  Offspring (B=64, act=sigmoid) -> fitness=0.8542
+  Offspring (B=64, act=sigmoid) -> fitness=0.8395
+  Offspring (B=16, act=tanh) -> fitness=0.0559
+
+=== Generation 1 ===
+  Avg fitness: 0.6926, Best fitness: 0.8833
+  Best so far: B=64, act=tanh, F1=0.8833
+  Offspring (B=64, act=tanh) -> fitness=0.8793
+  Offspring (B=128, act=tanh) -> fitness=0.8688
+  Offspring (B=64, act=tanh) -> fitness=0.8633
+  Offspring (B=1024, act=sigmoid) -> fitness=0.1819
+  Offspring (B=128, act=relu) -> fitness=0.8707
+  Offspring (B=32, act=sigmoid) -> fitness=0.8688
+  Offspring (B=64, act=sigmoid) -> fitness=0.8446
+  Offspring (B=64, act=relu) -> fitness=0.8723
+  Offspring (B=64, act=sigmoid) -> fitness=0.8568
+  Offspring (B=32, act=sigmoid) -> fitness=0.8784
+  Offspring (B=32, act=tanh) -> fitness=0.6832
+  Offspring (B=64, act=sigmoid) -> fitness=0.8662
+
+=== Generation 2 ===
+  Avg fitness: 0.7945, Best fitness: 0.8793
+  Best so far: B=64, act=tanh, F1=0.8793
+  Offspring (B=64, act=tanh) -> fitness=0.8127
+  Offspring (B=32, act=sigmoid) -> fitness=0.8693
+  Offspring (B=256, act=tanh) -> fitness=0.8533
+  Offspring (B=64, act=relu) -> fitness=0.7624
+  Offspring (B=64, act=relu) -> fitness=0.8627
+  Offspring (B=128, act=relu) -> fitness=0.8370
+  Offspring (B=512, act=sigmoid) -> fitness=0.4718
+  Offspring (B=32, act=sigmoid) -> fitness=0.8529
+  Offspring (B=32, act=tanh) -> fitness=0.7752
+  Offspring (B=64, act=tanh) -> fitness=0.8713
+  Offspring (B=64, act=relu) -> fitness=0.8499
+  Offspring (B=128, act=tanh) -> fitness=0.8286
+
+=== Generation 3 ===
+  Avg fitness: 0.8039, Best fitness: 0.8713
+  Best so far: B=64, act=tanh, F1=0.8713
+  Offspring (B=256, act=relu) -> fitness=0.8415
+  Offspring (B=64, act=relu) -> fitness=0.8449
+  Offspring (B=64, act=tanh) -> fitness=0.8685
+  Offspring (B=256, act=relu) -> fitness=0.8393
+  Offspring (B=64, act=tanh) -> fitness=0.8362
+  Offspring (B=32, act=relu) -> fitness=0.7367
+  Offspring (B=64, act=tanh) -> fitness=0.8732
+  Offspring (B=32, act=relu) -> fitness=0.8204
+  Offspring (B=32, act=tanh) -> fitness=0.6333
+  Offspring (B=128, act=sigmoid) -> fitness=0.8119
+  Offspring (B=32, act=tanh) -> fitness=0.4945
+  Offspring (B=64, act=sigmoid) -> fitness=0.8325
+
+=== Generation 4 ===
+  Avg fitness: 0.7861, Best fitness: 0.8732
+  Best so far: B=64, act=tanh, F1=0.8732
+  Offspring (B=128, act=relu) -> fitness=0.8343
+  Offspring (B=256, act=sigmoid) -> fitness=0.6455
+  Offspring (B=64, act=sigmoid) -> fitness=0.8481
+  Offspring (B=64, act=relu) -> fitness=0.8503
+  Offspring (B=64, act=tanh) -> fitness=0.8656
+  Offspring (B=64, act=sigmoid) -> fitness=0.8600
+  Offspring (B=32, act=relu) -> fitness=0.5128
+  Offspring (B=64, act=relu) -> fitness=0.8234
+  Offspring (B=64, act=relu) -> fitness=0.8080
+  Offspring (B=512, act=sigmoid) -> fitness=0.5021
+  Offspring (B=64, act=tanh) -> fitness=0.8611
+  Offspring (B=64, act=tanh) -> fitness=0.8697
+
+=== Generation 5 ===
+  Avg fitness: 0.8094, Best fitness: 0.8732
+  Best so far: B=64, act=tanh, F1=0.8732
+  Offspring (B=128, act=tanh) -> fitness=0.8781
+  Offspring (B=64, act=relu) -> fitness=0.8188
+  Offspring (B=64, act=tanh) -> fitness=0.8893
+  Offspring (B=64, act=tanh) -> fitness=0.8831
+  Offspring (B=512, act=relu) -> fitness=0.8241
+  Offspring (B=64, act=tanh) -> fitness=0.8766
+  Offspring (B=64, act=tanh) -> fitness=0.8572
+  Offspring (B=64, act=sigmoid) -> fitness=0.8523
+  Offspring (B=128, act=relu) -> fitness=0.8678
+  Offspring (B=128, act=relu) -> fitness=0.8577
+  Offspring (B=32, act=sigmoid) -> fitness=0.8739
+  Offspring (B=64, act=relu) -> fitness=0.8355
+
+=== Generation 6 ===
+  Avg fitness: 0.8595, Best fitness: 0.8893
+  Best so far: B=64, act=tanh, F1=0.8893
+  Offspring (B=32, act=relu) -> fitness=0.5787
+  Offspring (B=512, act=tanh) -> fitness=0.8263
+  Offspring (B=64, act=relu) -> fitness=0.7804
+  Offspring (B=64, act=tanh) -> fitness=0.8593
+  Offspring (B=64, act=tanh) -> fitness=0.8674
+  Offspring (B=64, act=tanh) -> fitness=0.8159
+  Offspring (B=128, act=sigmoid) -> fitness=0.8235
+  Offspring (B=16, act=relu) -> fitness=0.0216
+  Offspring (B=128, act=tanh) -> fitness=0.8555
+  Offspring (B=128, act=relu) -> fitness=0.8460
+  Offspring (B=32, act=tanh) -> fitness=0.3734
+  Offspring (B=64, act=tanh) -> fitness=0.8761
+
+=== Generation 7 ===
+  Avg fitness: 0.7103, Best fitness: 0.8761
+  Best so far: B=64, act=tanh, F1=0.8761
+  Offspring (B=64, act=tanh) -> fitness=0.8807
+  Offspring (B=64, act=relu) -> fitness=0.8050
+  Offspring (B=128, act=relu) -> fitness=0.8502
+  Offspring (B=64, act=relu) -> fitness=0.8707
+  Offspring (B=32, act=tanh) -> fitness=0.5294
+  Offspring (B=512, act=sigmoid) -> fitness=0.3803
+  Offspring (B=32, act=relu) -> fitness=0.7406
+  Offspring (B=64, act=relu) -> fitness=0.8479
+  Offspring (B=64, act=tanh) -> fitness=0.8924
+  Offspring (B=32, act=tanh) -> fitness=0.7587
+  Offspring (B=64, act=tanh) -> fitness=0.8313
+  Offspring (B=64, act=tanh) -> fitness=0.8621
+
+=== Generation 8 ===
+  Avg fitness: 0.7708, Best fitness: 0.8924
+  Best so far: B=64, act=tanh, F1=0.8924
+  Offspring (B=64, act=relu) -> fitness=0.8388
+  Offspring (B=128, act=relu) -> fitness=0.8050
+  Offspring (B=64, act=tanh) -> fitness=0.8725
+  Offspring (B=64, act=tanh) -> fitness=0.8775
+  Offspring (B=64, act=tanh) -> fitness=0.8728
+  Offspring (B=64, act=tanh) -> fitness=0.8792
+  Offspring (B=64, act=tanh) -> fitness=0.8770
+  Offspring (B=64, act=relu) -> fitness=0.7722
+  Offspring (B=512, act=relu) -> fitness=0.8058
+  Offspring (B=128, act=relu) -> fitness=0.8142
+  Offspring (B=64, act=sigmoid) -> fitness=0.8407
+  Offspring (B=16, act=tanh) -> fitness=0.0188
+
+=== Generation 9 ===
+  Avg fitness: 0.7837, Best fitness: 0.8924
+  Best so far: B=64, act=tanh, F1=0.8924
+  Offspring (B=64, act=tanh) -> fitness=0.8943
+  Offspring (B=64, act=tanh) -> fitness=0.8721
+  Offspring (B=64, act=tanh) -> fitness=0.8659
+  Offspring (B=64, act=tanh) -> fitness=0.8564
+  Offspring (B=64, act=tanh) -> fitness=0.8591
+  Offspring (B=64, act=tanh) -> fitness=0.7865
+  Offspring (B=32, act=tanh) -> fitness=0.6618
+  Offspring (B=64, act=tanh) -> fitness=0.8083
+  Offspring (B=256, act=tanh) -> fitness=0.8370
+  Offspring (B=128, act=tanh) -> fitness=0.8518
+  Offspring (B=64, act=tanh) -> fitness=0.8440
+  Offspring (B=64, act=tanh) -> fitness=0.8866
+
+=== GA Finished ===
+Best in last generation: B=64, act=tanh, F1=0.8943
+Saved GA fitness plot to: /nfs/home/emg6364/RL-469/HW-4/results/ga_fitness.png
+Saved training F1 plot to: /nfs/home/emg6364/RL-469/HW-4/results/train_f1_best.png
+
+=== Final Evaluation on Test Set ===
+Best hyperparameters: batch_size=64, activation=tanh
+Test macro F1: 0.9137
