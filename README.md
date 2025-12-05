@@ -16,6 +16,8 @@ Then navigate to the HW-4 directory:
 cd RL-469/HW-4
 ```
 
+ALL scripts should be run from this directory.
+
 This homework implements two AutoML methods for tuning:
 
 - **Mini-batch size B**
