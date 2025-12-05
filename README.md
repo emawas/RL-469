@@ -1,4 +1,87 @@
 # RL-469
+
+# HW-4 Instructions on How to Run the Code  
+Genetic Algorithm + Bayesian Optimization for EMNIST (Digits Only)  
+RL-469 — Assignment 4
+
+## Clone the RL-469 repository
+```
+git clone https://github.com/emawas/RL-469.git
+```
+
+
+Then navigate to the HW-4 directory:
+
+```
+cd RL-469/HW-4
+```
+
+This homework implements two AutoML methods for tuning:
+
+- **Mini-batch size B**
+- **Activation function** ∈ {relu, sigmoid, tanh}
+
+The dataset used is EMNIST digits (10 classes) loaded from:
+
+
+```
+HW-4/Assignment3-data/
+```
+# Part 1 — Genetic Algorithm (GA)
+
+## Running the Genetic Algorithm
+
+The GA implementation is located in:
+```
+HW-4/src/genetic_tuning_emnist.py
+```
+
+To run the full GA pipeline:
+
+
+nohup python -u src/genetic_tuning_emnist.py > results/ga_run.log 2>&1 &
+tail -f results/ga_run.log
+
+This script:
+
+1. Loads and splits EMNIST (train/val/test)
+2. Runs the Genetic Algorithm using:
+   - Roulette selection
+   - One-point crossover
+   - Age-based survivor selection
+3. Finds the best hyperparameters (batch size + activation)
+4. Retrains on train+validation
+5. Evaluates on test set
+6. Saves plots
+
+### Output files
+
+GA fitness across generations:
+
+```
+HW-4/results/ga_fitness.png
+```
+
+Training F1 curve of best GA model:
+
+```
+HW-4/results/train_f1_best.png
+```
+GA run logs:
+```
+HW-4/results/ga_run.log
+```
+# Part 2 — Bayesian Optimization (BO)
+
+## Running Bayesian Optimization
+
+The BO implementation is located in:
+
+```
+HW-4/src/bayesopt.py
+```
+
+
 ## HW 3 Instructions on how to run the code:
 
 ## Part 1
