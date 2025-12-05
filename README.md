@@ -80,6 +80,36 @@ The BO implementation is located in:
 ```
 HW-4/src/bayesopt.py
 ```
+Run the BO pipeline with:
+
+
+```
+nohup python -u src/bayesopt.py > results/bo_run.log 2>&1 &
+tail -f results/bo_run.log
+```
+This script:
+
+1. Loads EMNIST dataset
+2. Uses the `bayesian-optimization` Python package
+3. Treats validation F1 after training as the black-box objective
+4. Searches over:
+   - batch size ∈ [16, 1024]
+   - activation ∈ {relu, sigmoid, tanh}
+5. Retrains final model with best BO hyperparameters
+6. Evaluates on test set
+7. Saves plots
+
+### Output files
+
+Training F1 curve for best BO model:
+```
+HW-4/results/train_f1_best_bo.png
+```
+BO run logs:
+```
+HW-4/results/bo_run.log
+```
+
 
 
 ## HW 3 Instructions on how to run the code:
